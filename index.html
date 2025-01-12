@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -21,58 +22,15 @@
         <input type="text" placeholder="Etiqueta" />
         <button class="add-button">+</button>
       </div>
-
-      <div class="tasks">
-        <div class="task">
-          <div class="task-group">
-            <div>
-              <div class="task-title">
-                Implementar tela de listagem de tarefas
-              </div>
-              <div class="task-meta">
-                <div class="task-tags">
-                  <span class="tag">frontend</span>
-                </div>
-                <span class="task-date">Criado em: 27/08/2024</span>
-              </div>
-            </div>
-            <button class="conclude-button">Concluir</button>
-          </div>
-        </div>
-
-        <div class="task">
-          <div class="task-group">
-            <div>
-              <div class="task-title">
-                Criar endpoint para cadastro de tarefas
-              </div>
-              <div class="task-meta">
-                <div class="task-tags">
-                  <span class="tag">backend</span>
-                </div>
-                <span class="task-date">Criado em: 27/08/2024</span>
-              </div>
-            </div>
-            <button class="conclude-button">Concluir</button>
-          </div>
-        </div>
-
-        <div class="task">
-          <div class="task-group">
-            <div>
-              <div class="task-title-conclude">
-                Implementar protótipo da listagem de tarefas
-              </div>
-              <div class="task-meta">
-                <div class="task-tags">
-                  <span class="tag">ux</span>
-                </div>
-                <span class="task-date">Criado em: 27/08/2024</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="tasks"></div>
+      <hr class="divider">
+      <div id="tasks-progress"></div>
+      <footer id="todo-footer">
+        <button onclick="removeDoneTasks()" class="remove-done-tasks-btn">
+            Remover tarefas concluídas
+        </button>
     </div>
+    
   </body>
+  <script src="index.js"></script>
 </html>

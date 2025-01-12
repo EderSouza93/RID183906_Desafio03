@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -75,6 +76,7 @@ input::placeholder {
 }
 
 .task-title-conclude {
+    text-decoration: line-through;
     font-size: 1rem;
     color: #8F98A8;
     margin-bottom: .5rem;
@@ -85,6 +87,7 @@ input::placeholder {
     justify-content: space-between;
     align-items: center;
     margin: 1rem 0;
+    gap: 1rem;
 }
 
 .task-tags {
@@ -119,6 +122,29 @@ input::placeholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.divider {
+    margin: 1.5rem 0;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+#tasks-progress {
+    display: flex;
+    justify-content: end;
+    color: #8F98A8;
+    font-size: 0.875rem;
+}
+
+.remove-done-tasks-btn{
+    background: #2D70FD;
+    color: white;
+    border: none;
+    border-radius: .25rem;
+    padding: .5rem 1rem;
+    font-size: .87rem;
+    cursor: pointer;
 }
 
 /* Breakpoints */
