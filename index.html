@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -14,23 +13,22 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="board">
+    <main>
       <h1>Board de tarefas</h1>
-
-      <div class="input-group">
+      <section class="input-group">
         <input type="text" placeholder="Nome da tarefa" />
         <input type="text" placeholder="Etiqueta" />
         <button class="add-button">+</button>
-      </div>
-      <div class="tasks"></div>
+      </section>
+      <section class="tasks"></section>
       <hr class="divider">
-      <div id="tasks-progress"></div>
       <footer id="todo-footer">
         <button onclick="removeDoneTasks()" class="remove-done-tasks-btn">
             Remover tarefas concluídas
         </button>
-    </div>
-    
+        <div id="tasks-progress"></div>
+      <footer>
+    </main> 
   </body>
   <script src="index.js"></script>
 </html>
